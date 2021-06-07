@@ -1,0 +1,41 @@
+
+
+<div class="main-content page-m">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+<div class="col-md-6 par-container">
+  <h2 style="margin: auto"> Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      
+      <th>id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+      
+    </tr>
+    </thead>
+    <tbody>
+  
+
+      
+    <div *ngFor="let p of parsList" >
+      <td>{{p.id}}</td>
+      <td>{{p.firstName}}</td>
+      <td>{{p.lastName}}</td>
+      <td>{{p.email}}</td>
+      
+    <td><button class="btn btn-success" (click)="deletePar(p)" > Delete</button>
+        <button class="btn btn-success" (click)="editPar(p)" style="margin-left: 20px;"> Edit</button></td>
+    </div>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+
+            
+           

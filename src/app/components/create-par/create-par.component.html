@@ -1,0 +1,28 @@
+<div class="main-content page-m">
+  <div class="section-content section-content-p30">
+      <div class="container-fluid">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+      </div>
+  
+      <div class="form-group">
+        <label for="age">Email:</label>
+        <input  formControlName="email" placeholder="email" name="email" class="form-control" id="email">
+      </div>
+  
+      
+      <button class="btn btn-success">Add</button>
+    </form>
+  </div>
+</div>
+</div>
+ 
